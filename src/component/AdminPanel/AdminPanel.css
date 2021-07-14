@@ -1,0 +1,20 @@
+.sidepanel{
+     background-color: darkcyan;
+     background-image: url('../../bg.png');
+     height:800px;
+     text-align: center;
+     color: white;
+     padding-top: 80px;
+}
+.sidepanel h4{
+     padding-top: 20px;
+     padding-bottom: 7px;
+     border-top: 1px solid yellow;
+     border-radius: 8px;
+     box-shadow:1px 0px 2px #00ff29;
+     margin-top: 20px;
+     cursor: pointer;
+}
+.sidepanel h4:hover{
+     background-color:#031e03;
+}

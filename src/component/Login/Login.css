@@ -1,0 +1,13 @@
+.google{
+     text-align:center;
+     color:#0553f8;
+     font-weight: border;
+     margin-top: 80px;
+     
+}
+.google img{
+     width: 449px;
+     height: 222px;
+     border-radius: 50%;
+     cursor: pointer;
+}
