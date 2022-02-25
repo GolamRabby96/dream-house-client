@@ -11,7 +11,7 @@ const HomeProduct = (props) => {
 		history.push(`/buynow/${key}`);
 	};
 	return (
-		<div className="col-md-3 colthreecontrol">
+		<div className="col-sm-6 col-md-3 colthreecontrol">
 			<Card onClick={handlePushHistory}  className="mt-2 productCardHome">
 				<Card.Img onClick={handlePushHistory} variant="top" className="card-image productImageHome" src={img} />
 				<Card.Body>
@@ -21,7 +21,7 @@ const HomeProduct = (props) => {
 				<Card.Body>
 					<Card.Text>Price: $ {price}</Card.Text>
 					<Card.Link>
-						<button onClick={handlePushHistory} className="btn btn-sm btn-info container">
+						<button onClick={handlePushHistory} className="btn btn-sm btn-dark container">
 							By Now
 						</button>
 					</Card.Link>

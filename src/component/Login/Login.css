@@ -1,13 +1,57 @@
-.google{
+.loginFromBody{
+     background-image: url("../Image/log.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height:100vh;
+ }
+ 
+ .loginform{
+     background: #00000094;
+     border-radius: 8px;
+ }
+ .loginbtn{
+     margin: auto;
+ }
+ .google{
      text-align:center;
-     color:#0553f8;
+     color:#ffffff;
      font-weight: border;
-     margin-top: 80px;
      
-}
-.google img{
+ }
+ .google img{
      width: 449px;
      height: 222px;
-     border-radius: 50%;
      cursor: pointer;
-}
+ }
+ .googleLoginButton{
+     cursor: pointer;
+     font-size:16px;
+     font-weight: bold;
+ }
+ .googleLoginButton:hover{
+     color:aqua;
+     transition: 1s;
+ }
+ .googleLoginUnderButton{
+     width: 20px;
+     height: 20px;
+     background-color: red;
+ }
+ .registerText{
+     cursor: pointer;
+ }
+ .registerText:hover{
+     color:rgb(11, 250, 103);
+     transition: 1s;
+ }
+ .confirmRegisterButton{
+     transition: 2s ease;
+ }
+ .messageSection{
+     background: #00000094;
+     border-radius: 8px;
+     text-align: center;
+     color: #fff;
+     padding:2px;
+     margin-bottom: 5px;
+ }
