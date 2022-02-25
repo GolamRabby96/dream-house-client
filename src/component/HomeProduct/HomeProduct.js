@@ -1,29 +1,29 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import './HomeProduct.css'
-import { useHistory } from 'react-router';
+import "./HomeProduct.css";
+import { useHistory } from "react-router";
 
 const HomeProduct = (props) => {
-     const {img, name, price, category, key} = props.product;
+	const { img, name, price, category, key } = props.product;
 
-     const history = useHistory();
-     const handlePushHistory= ()=> {
-          history.push(`/buynow/${key}`);
-     }
+	const history = useHistory();
+	const handlePushHistory = () => {
+		history.push(`/buynow/${key}`);
+	};
 	return (
 		<div className="col-md-3 colthreecontrol">
-			<Card className="shadow mt-2">
-				<Card.Img variant="top" className="card-image" src={img} />
+			<Card onClick={handlePushHistory}  className="mt-2 productCardHome">
+				<Card.Img onClick={handlePushHistory} variant="top" className="card-image productImageHome" src={img} />
 				<Card.Body>
 					<Card.Title>{category}</Card.Title>
-					<Card.Text className="text-control">
-						{name} 
-					</Card.Text>
+					<Card.Text className="text-control productName">{name.substring(0,70)}</Card.Text>
 				</Card.Body>
 				<Card.Body>
-					<Card.Link>${price}</Card.Link>
-					<Card.Link >
-						<button onClick={handlePushHistory} className="btn btn-sm btn-info">By Now</button>
+					<Card.Text>Price: $ {price}</Card.Text>
+					<Card.Link>
+						<button onClick={handlePushHistory} className="btn btn-sm btn-info container">
+							By Now
+						</button>
 					</Card.Link>
 				</Card.Body>
 			</Card>

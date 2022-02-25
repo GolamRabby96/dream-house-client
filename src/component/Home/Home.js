@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import HomeProduct from "../HomeProduct/HomeProduct";
-import { Button, Spinner} from 'react-bootstrap';
+import { Button, Spinner } from "react-bootstrap";
 
 const Home = () => {
 	const [products, setProducts] = useState([]);
@@ -25,10 +25,9 @@ const Home = () => {
 						Loading...
 					</Button>
 				)}
-				{
-                         products.map(pd => <HomeProduct product={pd}></HomeProduct>)
-                    }
-				
+				{products.map((pd) => (
+					<HomeProduct product={pd}></HomeProduct>
+				))}
 			</div>
 		</div>
 	);
